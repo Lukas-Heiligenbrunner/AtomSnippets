@@ -1,0 +1,24 @@
+'.source.js':
+  'jquery click listener':
+    'prefix': 'click jquery'
+    'body': """
+    $('$1').click(function() {
+
+    });
+    """
+
+  'jquery post request':
+    'prefix': 'post jquery'
+    'body': """
+    $.post('${1:src}','${2:action}',function(data){
+
+    },'text');
+    """
+
+  'jquery onready listener':
+    'prefix': 'ready jquery'
+    'body': """
+    $(document).ready(function() {
+
+    });
+      """
