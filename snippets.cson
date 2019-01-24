@@ -3,7 +3,6 @@
     'prefix': 'click jquery'
     'body': """
     $('$1').click(function() {
-
     });
     """
 
@@ -11,7 +10,13 @@
     'prefix': 'post jquery'
     'body': """
     $.post('${1:src}','${2:action}',function(data){
+    },'text');
+    """
 
+  'jquery get request':
+    'prefix': 'get jquery'
+    'body': """
+    $.get('${1:src}',function(data){
     },'text');
     """
 
@@ -19,6 +24,5 @@
     'prefix': 'ready jquery'
     'body': """
     $(document).ready(function() {
-
     });
       """
